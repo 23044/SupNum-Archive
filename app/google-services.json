@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "936307059067",
+    "project_id": "supnum-archive",
+    "storage_bucket": "supnum-archive.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936307059067:android:518f10215bac2281e435de",
+        "android_client_info": {
+          "package_name": "com.example.supnumarchive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3LBlcsVNmPc3dLarRztq23UGfRerxZ2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
