@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="logo_size">200dp</dimen>
+    <dimen name="form_width">90%</dimen>
+    <dimen name="button_height">48dp</dimen>
+</resources>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="colorWhite">#FFFFFF</color> <!-- blanc -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Bleu foncé classique Android -->
     <color name="white">#FFFFFFFF</color>
+    <color name="rugeborder">#57273D</color>
+
+    <color name="colleriat">#FFD088</color>
+
+
 </resources>

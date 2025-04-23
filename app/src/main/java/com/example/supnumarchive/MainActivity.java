@@ -1,7 +1,11 @@
 package com.example.supnumarchive;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Application;
+import android.view.View;
+import android.widget.Button;
+
 import com.google.firebase.FirebaseApp;
 
 
@@ -16,14 +20,26 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FirebaseApp.initializeApp(this); // Initialise Firebase
+        setContentView(R.layout.activity_main); // Assure-toi que c'est le bon layout
 
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        Button btnLogin = findViewById(R.id.btn_login);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Redirection vers LoginActivity
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn_signup = findViewById(R.id.btn_signup);
+        btn_signup.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(MainActivity.this, SignupActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }

@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Couleur de fond -->
+    <solid android:color="@color/colleriat" />
+
+    <!-- Coins arrondis -->
+    <corners android:radius="30dp" />
+
+    <!-- Bordure (facultatif) -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/colleriat" /> <!-- Même couleur que le fond ici -->
+</shape>
